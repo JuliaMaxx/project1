@@ -1,0 +1,28 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+    New Page
+{% endblock %}
+
+{% block form %}
+    {{form}}
+{% endblock %}
+
+{% block body %}
+    {% if taken %}
+        <div class="alert alert-primary" role="alert">
+            This title already exists
+        </div>
+    {% endif %}
+    <h1>Create New Page</h1>
+    <form method="post" action="{%url 'new'%}">
+        {{form1.title}}
+        <br>
+        <br>
+        {{form1.mdtext}}
+        <br>
+        {{form1.save}}
+        {% csrf_token %}
+    </form>
+{% endblock %}
