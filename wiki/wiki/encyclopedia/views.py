@@ -9,12 +9,12 @@ import random
 
 # create a django form for searching entries
 class SearchForm(forms.Form):
-    entry = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Search'}), label="")
+    entry = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Search', 'autocomplete':'off'}), label="")
 
 # create a dgango form for creating a new entry
 class NewEntryForm(forms.Form):
     title = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Title'}), label="")
-    mdtext = forms.CharField(widget=forms.Textarea(attrs={'rows': 5, 'cols': 20, 'style': "height:300px"}))
+    mdtext = forms.CharField(widget=forms.Textarea(attrs={'rows': 5, 'cols': 20, 'style': "height:300px", 'placeholder': 'MarkDown content'}))
     save = forms.CharField(widget=forms.TextInput(attrs={'type': 'submit','value': 'Save'}))
 
 # create a django form for editing entries
