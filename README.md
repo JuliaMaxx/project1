@@ -1,6 +1,6 @@
 # CS50W Project 1: Wiki
 ## Video Preview: https://www.youtube.com/watch?v=qU8y9zHmMbQ
-![Screenshot (7)](https://github.com/JuliaMaxy/project1/assets/121096183/1e921b65-9c9a-4140-8f93-e689204300aa)
+![Screenshot (7)](https://github.com/JuliaMaxy/project1/assets/121096183/d56ca9bb-7e1b-43f8-a92d-33410bae67a9)
 ## Description: 
 The goal was to recreate some of the functionality of the Wikipedia by having one Markdown(not WikiText) file represent each encyclopedia entry
 ### Specification:
@@ -11,3 +11,4 @@ The goal was to recreate some of the functionality of the Wikipedia by having on
 - **Edit Page**: On each entry page, the user is able to click a link to be taken to a page where they can edit that entry’s Markdown content
 - **Random Page**: Clicking `Random Page` in the sidebar takes user to a random encyclopedia entry
 - **Markdown to HTML Conversion**: On each entry’s page, any Markdown content in the entry file is converted to HTML before being displayed to the user
+
